@@ -22,9 +22,10 @@
 .container form{
     background: rgb(255, 255, 255);
     border-radius: 8px;
-    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.147);
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.15);
     padding: 20px;
     width: 600px;
+    padding-top: 150px;
 }
 
 .container form .inputBox{
@@ -71,4 +72,34 @@
     letter-spacing: 2;
     opacity: .7;
 
+}
+
+.container .card-container{
+    margin-bottom: -150px;
+    position: relative;
+    height: 240px;
+    width: 404px;
+}
+
+.container .card-container .front{
+    background: linear-gradient(45deg, forestgreen, skyblue);
+    border-radius: 8px;
+    backface-visibility: hidden;
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0;
+}
+
+.container .card-container .front .image{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.container .card-container .front .image img{
+    height: 60px;
+   
 }
