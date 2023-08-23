@@ -90,11 +90,8 @@
     width: 100%;
     top: -50px; left: 0;
     padding: 20px;
-}
-
-.container .card-container .front:hover{
     transform: perspective(1000px) rotateY(0deg);
-    transition: transform .4s ease-in-out;
+    transition: transform .4s ease-out;
 }
 
 .container .card-container .front .image{
@@ -139,11 +136,8 @@
     background: linear-gradient(90deg, rgb(240, 225, 255), rgb(223, 70, 111));
     border-radius: 8px;
     backface-visibility: hidden;
-}
-
-.container .card-container .back:hover{
     transform: perspective(1000px) rotateY(180deg);
-    transition: transform .4s ease-in;
+    transition: transform .4s ease-out;
 }
 
 .container .card-container .back .stripe{
@@ -161,7 +155,7 @@
 
 .container .card-container .back .box span{
     font-size: 14px; 
-    color:#fff;
+    color: #fff;
 }
 
 .container .card-container .back .box .cvv-box{
@@ -176,7 +170,7 @@
 }
 
 .container .card-container .back .box img{
-    margin-top: 20px;
+    margin-top: 10px;
     padding-top: 3px;
     height: 60px;
 }
