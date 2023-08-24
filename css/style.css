@@ -72,6 +72,12 @@ header{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, auto));
     gap: 2rem;
+    backface-visibility: hidden;
+}
+.shop-content .product-img:hover{
+    backface-visibility: hidden;
+    transform: scale(1.05);
+    transition: transform .4s ease-out;
 }
 .product-box{
     position: relative;
